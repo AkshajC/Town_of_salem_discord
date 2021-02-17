@@ -10,7 +10,7 @@ class Game:
 
     def kill(self, target, killer):
         if target.role.defense < killer.role.attack:
-            if killer.role.__class__.__name__ == "Mafioso" or killer.role.__class__.__name__ == "Godfather"
+            if killer.role.__class__.__name__ == "Mafioso" or killer.role.__class__.__name__ == "Godfather":
                 message = f"{target.name} was killed by the mafia."
                 recipient = "everyone"
                 self.dead_players.append(target)
